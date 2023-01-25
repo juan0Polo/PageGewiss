@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" href="css/styleCookies.css">
 </head>
 
 <body class="body">
@@ -46,7 +47,7 @@
             <a class="nav-link" href="#">Alcance Del Servicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="contacto/contactanos.html">Contacto</a>
           </li>
         </ul>
       </div>
@@ -210,36 +211,7 @@
     </div>
   </section>
   <!-- Fin metodologias -->
-
-  <!-- inicio comentarios -->
-  <section id="comentarios" class="bg-success">
-    <h1 class="metodos-gewiss text-light">Dejanos Tus Comentarios</h1>
-    <div class="contenido2">
-      <form>
-        <div class="form-outline mb-4">
-          <label class="form-label text-light" for="form4Example1">Nombre</label>
-          <input type="text" id="form4Example1" class="form-control" />
-        </div>
-        <div class="form-outline mb-4">
-          <label class="form-label text-light" for="form4Example2">Email</label>
-          <input type="email" id="form4Example2" class="form-control" />
-        </div>
-
-        <div class="form-outline mb-4">
-          <label class="form-label text-light " for="form4Example3">Comentario</label>
-          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-        </div>
-        <div class="form-check d-flex justify-content-center mb-4">
-          <input class="form-check-input me-2 bg-success" type="checkbox" value="" id="form4Example4" checked />
-          <label class="form-check-label text-light" for="form4Example4">
-            Recivir una copia del mensage
-          </label>
-        </div>
-        <button type="submit" class="btn btn-primary bg-light text-success btn-block mb-4">Enviar</button>
-      </form>
-    </div>
-  </section>
-
+  
   <!-- Inicio fooder -->
   <footer class="text-center text-lg-start bg-light text-muted">
     <section class="fooder-m">
@@ -278,11 +250,21 @@
     </div>
   </footer>
   <!-- Fin footer -->
+  <!-- cookies -->
+  <div class="aviso-cookies " id="aviso-cookies">
+    <img src="recursos/imagenes/cookie.svg" alt="Galleta" class="galleta">
+    <h3 class="TITULO">Cookies</h3>
+    <p class="PARRAFO">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+    <button class="BOTON" id="btn-aceptar-cookies">De acuerdo</button>
+    <a href="aviso-cookies.html" class="ENLACE">Aviso de cookies</a>
+</div>
+<div class="fondo-aviso-cookies " id="fondo-aviso-cookies"></div>
 
   <!-- Scrps -->
   <script src="js/index.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/avisoCookies.js"></script>
 </body>
 
 </html>

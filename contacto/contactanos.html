@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/boostrap.css">
+    <link rel="stylesheet" href="../css/boostrap.min.css">
+    <link rel="stylesheet" href="../css/estylo.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <link rel="stylesheet" href="../css/styleCookies.css">
+
+</head>
+<body>
+
+    <div><img src="../recursos/imagenes/logo-gewis.png" alt="logo de GEWISS" class="logo"></div>
+    <!-- Inicio de Nav-bar-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-nav" id="ventana">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="marca">GEWISS COLOMBIA SAS</a>
+            <button id="nav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="icon-menu" id="toggler"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+                <ul class="navbar-nav mb-2 mb-md-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../quinesSomos/quienesSomos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../servicios/servcios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../metodologia/metodologia.html">Metodologias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alcanse Del Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../contacto/contactanos.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fin de nav-bar -->
+
+    <!-- Slider -->
+
+    <section id="container-slider">
+        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+        <ul class="listslider">
+            <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+            <li><a itlist="itList_1" href="#"></a></li>
+            <li><a itlist="itList_2" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+            <li
+                style="background-image: url('https://img.freepik.com/foto-gratis/dos-hombres-negocios-confia-estrechar-mano-reunion-oficina-exito-trato-saludo-concepto-socio_1423-185.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider">
+                    <div>
+                        <h2>Emprendimiento empresarial</h2>
+                        <p>Descubra en qué consiste el emprendimiento empresarial por medio de 5 estrategias
+                            fundamentales.</p>
+                        <a href="#" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <li
+                style="background-image: url('https://img.freepik.com/fotos-premium/gente-negocios-dandose-mano-cerrando-trato-exitoso_35666-159.jpg?w=2000'); ">
+                <div class="content_slider">
+                    <div>
+                        <h2>Negocios</h2>
+                        <p>Recursos, guías, herramientas y consejos para emprender, crear tu empresa o iniciar un
+                            negocio exitoso
+                        </p>
+                        <a href="#" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <li
+                style="background-image: url('https://iuris27.com/wp-content/uploads/2022/10/shutterstock_1892089864-scaled.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h2>Estrategias de negocio</h2>
+                        <p>Las estrategias de negocio representan planes o métodos...</p>
+                        <a href="#" class="btnSlider">Ver más</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- Fin slider -->
+
+     <!-- inicio comentarios -->
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1 class="text-light">Contactanos</h1>
+        <h3 class="text-light">Diligencia el siguiente formulario y nos contactaremos con tigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+                <p>
+                    <label aria-colspan="label" class="text-light" for="nombre" class="colocar_nombre">Nombre<span class="obligatorio text-light">*</span></label>
+                    <input class="entradaTexto" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                    <label aria-colspan="label" class="text-light" for="email" class="colocar_email">Email<span class="obligatorio text-light">*</span></label>
+                    <input class="entradaTexto" type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                    <label aria-colspan="label" class="text-light" for="telefone" class="colocar_telefono">Teléfono</label>
+                    <input class="entradaTexto" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                    <label aria-colspan="label" class="text-light" for="asunto" class="colocar_asunto">Asunto<span class="obligatorio text-light">*</span></label>
+                    <input class="entradaTexto" type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                    <label aria-colspan="label" class="text-light" for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio text-light">*</span></label>                     
+                    <textarea name="introducir_mensaje" class="texto_mensaje textarea" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                </p>                    
+              
+                <div class="btn-mas-metodos">
+                    <a href="#" class="botonMas">Enviar</a>
+                  </div>
+
+                <p class="aviso text-light">
+                  <span class="obligatorio text-light"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+  <!-- Inicio fooder -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <section class="fooder-m">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-success fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>GEWISS COLOMBIA SAS
+                    </h6>
+                    <img src="../recursos/imagenes/logo-gewis.png" alt="" class="logo-fooder">
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-success fw-bold mb-4">Enlaces de interes</h6>
+                    <p><a href="#!" class="text-reset">Conocenos</a></p>
+                    <p><a href="#!" class="text-reset">Servicios</a></p>
+                    <p><a href="#!" class="text-reset">Metodologia</a></p>
+                    <p><a href="#!" class="text-reset">Certificados</a></p>
+                    <p><a href="#!" class="text-reset">Contacto</a></p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-success fw-bold mb-4">Contacto</h6>
+                    <p><i class="fas fa-home me-3"></i>Colombia, Bogotá Car 14 #149-26</p>
+                    <p><i class="fas fa-envelope me-3"></i>gewiss@outlook.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +57 3219877890</p>
+                    <p><i class="fas fa-phone me-3"></i> <a href="#" class="text-success">Ver en el mapa</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center p-4 text-success" style="background-color: rgba(0, 0, 0, 0.05);">© 2023 Copyright: <a
+            class="text-reset fw-bold" href="#">gewiss.com</a>
+    </div>
+</footer>
+<!-- Fin footer -->
+
+<!-- cookies -->
+<div class="aviso-cookies " id="aviso-cookies">
+    <img src="../recursos/imagenes/cookie.svg" alt="Galleta" class="galleta">
+    <h3 class="TITULO">Cookies</h3>
+    <p class="PARRAFO">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+    <button class="BOTON" id="btn-aceptar-cookies">De acuerdo</button>
+    <a href="aviso-cookies.html" class="ENLACE">Aviso de cookies</a>
+</div>
+<div class="fondo-aviso-cookies " id="fondo-aviso-cookies"></div>
+
+<!-- Scrps -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/avisoCookies.js"></script>
+</body>
+</html>
