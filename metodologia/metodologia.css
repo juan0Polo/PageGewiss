@@ -1,0 +1,75 @@
+*{
+font-family: Arial;
+}
+#metodologia{
+    display: flex;
+    background: var(--colorSecundario);
+    justify-content: center;
+    margin-top: 0px;
+    padding: 20px;
+    align-items: center;
+}
+.imgMetodoligia{
+    width: 400px;
+    height: 400px;
+}
+.txt-metodologia{
+    color: rgb(1, 20, 1);
+    border: 1px solid rgb(194, 209, 196);
+    border-radius: 20px;
+    width: 60%;
+    padding: 20px;
+    font-family: Arial;
+}
+.txt-metodologia-titulo{
+    color: rgb(1, 20, 1);
+    width: 80%;
+    padding: 20px;
+    border-bottom: 1px solid rgb(27, 69, 26);
+}
+.txt-metodologia-titulo h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+.txt-metodologia p{
+    font-size: 16px;
+}
+.metodologia-img{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.final{
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    height: 80%;
+    width: 80%;
+    padding: 15px;
+}
+#seccion-metodologia{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    border-bottom: 1px solid rgb(27, 69, 26);
+    height: 80%;
+    width: 80%;
+    padding: 15px;
+}
+.metodologia-titulo{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 30%;
+}
+.metodologia-titulo h1{
+    font-size: 23px;
+    font-weight: bold;
+}
+.metologia-texto{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 80%;
+}

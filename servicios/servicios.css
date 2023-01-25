@@ -1,0 +1,38 @@
+#servicio{
+    display: flex;
+    background: var(--colorSecundario);
+    justify-content: center;
+    margin-top: 0px;
+    padding: 20px;
+    align-items: center;
+}
+.imgServicio{
+    width: 400px;
+    height: 400px;
+}
+.txt-servicio{
+    color: rgb(1, 20, 1);
+    border: 1px solid rgb(194, 209, 196);
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+    font-family: Arial;
+}
+.txt-servicio:hover{
+    background: rgb(232, 239, 233);
+    border: 2px solid rgb(219, 237, 221);
+}
+.txt-servicio h1{
+    font-size: 35px;
+}
+.txt-servicio p{
+    font-size: 16px;
+}
+.servicio-img{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.final{
+    margin-bottom: 60px;
+}
