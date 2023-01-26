@@ -92,9 +92,11 @@
 .tiposEstructuras{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .estucturaEquipo{
-    background: #fff;
+    background: var(--colorPrimario);
     margin: 8px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -108,6 +110,7 @@
 }
 .estucturaEquipo h1{
     font-size: 19px;
+    margin-top: 15px;
 }
 .estucturaEquipo p{
     font-size: 13px;
