@@ -20,7 +20,7 @@
 }
 .txt-servicio:hover{
     background: rgb(232, 239, 233);
-    border: 2px solid rgb(219, 237, 221);
+    border: 1px solid rgb(219, 237, 221);
 }
 .txt-servicio h1{
     font-size: 35px;
@@ -33,6 +33,56 @@
     width: 50%;
     justify-content: center;
 }
+.textServices{
+    color: white;
+    font-size: 19px;
+}
+#NavServicios{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.textIntroService{
+    margin: 0px;
+    text-align: center;
+}
+.titleService{
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+#SectionNavServices{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contenedorNavs{
+    display: block;
+    text-align: center;
+    width: 70%;
+}
+.divBtnService{
+    margin: 2px 0px 2px 0px;
+    border: 1.5px solid rgb(30, 232, 144);
+    padding: 5px;
+    background: rgba(5, 173, 19, 0.281);
+    width: 100%;
+}
+.divBtnService:hover{
+    background-color: rgba(2, 96, 30, 0.411);
+    color: white;
+}
+.btNavServices{
+    color:rgb(8, 154, 67);
+    font-weight: 100;
+}
+.btNavServices:hover{
+    color: white;
+}
+
+
 .final{
     margin-bottom: 60px;
 }

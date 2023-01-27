@@ -830,7 +830,7 @@ a:link {
     background: #199754;
     transform-origin: 0%;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 }
 .navboton{
     margin: 15px;
