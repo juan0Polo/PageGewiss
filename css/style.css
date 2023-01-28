@@ -36,6 +36,7 @@
 /* boody */
 .body {
     font-family: sans-serif;
+    background-color: #34aad10f;
 }
 
 :root {
@@ -64,7 +65,6 @@
 }
 
 #navbarCollapse ul {
-    margin-left: auto;
 }
 
 .nav-link {
@@ -82,7 +82,12 @@
     color: var(--fondo1) !important;
     font-weight: 700;
 }
-
+@media screen and (min-width: 800px){
+    .qs{
+        width: 800px;
+        height: 500px
+    }
+}
 @media screen and (max-width:768px) {
 
     .navactive {
@@ -145,6 +150,10 @@
         justify-content: center;
         align-items: center;
     }
+    .qs{
+        width: auto;
+        height: auto;
+    }
 }
 
 /* /icono responsive */
@@ -163,6 +172,7 @@
 }
 
 #slider {
+    margin-bottom: 0;
     position: relative;
     display: block;
     width: 100%;
@@ -218,10 +228,11 @@
 
 .content_slider h2 {
     font-family: 'arial';
-    font-size: 30pt;
+    font-size: 4em;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .content_slider p {
@@ -335,14 +346,14 @@
         padding: 10px 30px;
         font-size: 10pt;
     }
-
+    
 }
 
 /* Fin slider */
 
 /* Inicio divicion 1 */
 .div1 {
-    background: var(--background2);
+    color: white;
     display: flex;
     padding: 10px;
     justify-content: center;
@@ -368,18 +379,16 @@
 }
 
 .qs {
-    width: 500px;
-    height: 340px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 1px solid rgb(1, 74, 62);
+    border-radius: 0 50px 0 50px;
+    border: 3px solid #32a9d3;
     margin-bottom: 20px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 30px;
+    background: #00000045;
 }
 
 /* Fin divicion 1 */
@@ -440,15 +449,10 @@
 }
 
 #galeria {
-    min-height: 750px;
     max-width: 1920px;
     margin: 0px auto;
     width: 100%;
     position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .header nav {
@@ -480,34 +484,35 @@
     border-bottom: solid 2px white;
 }
 
-*/ #principal {
+#principal {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 1920px;
+    min-height: auto;
     margin: 0px auto;
     width: 100%;
     position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../recursos/imagenes/personas-charlando.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    border-top: 2px solid #32a9d3;
 }
 
 #galeria {
     display: inline-block;
     text-align: center;
-    background: var(--background1);
+    background:#34aad10f; 
+    border-top: 4px solid #32a9d3;
 }
 
-#principal {
-    background: #fff 50% 0 no-repeat fixed;
-    min-height: 400px;
-    max-width: 1920px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .contenido,
 .contenido1 {
@@ -517,11 +522,12 @@
 }
 
 .quien {
-    color: #919191;
+    color: #94c4a8;
     margin-top: 40px;
     margin-bottom: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family: fantasy;
+    font-size: 70px;
+
 }
 
 .contenido,
@@ -529,15 +535,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .array {
     background: #199754;
-    width: 220px;
-    height: 220px;
+    width: 500px;
+    padding: 10px;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 10px;
+}
+.array:hover{
+        border: 1px solid #32a9d3;
+    animation-name: pulse_animation;
+    animation-duration: 3000ms;
+    transform-origin:50% 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+    background: #32a9d3;
 }
 
 .tit {
@@ -575,16 +594,16 @@
     letter-spacing: 1px;
     padding: 10px 50px;
     border: 1px solid #CCC;
-    background: rgba(4, 119, 52, 0.435);
+    background: #1e9757;
     border-radius: 31px;
     text-decoration: none;
     transition: .5s all;
 }
 
 .botonConocenos:hover {
-    background: #199754;
+    background: #32a9d3;
     border: 1px solid rgb(150, 249, 214);
-    color: FFF;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -697,6 +716,7 @@ a:link {
 
 .contenedor-logo {
     display: flex;
+    background: #34aad10f;
 }
 
 /* FORMULARIO DE CONTACTANOS */
@@ -813,16 +833,14 @@ a:link {
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
+    border-top: 4px solid #32a9d3;
 }
 .tituloEquipo{
     font-weight: 800;
+    font-size: 90px;
+    text-align: center;
 }
 
-.tituloEquipo:hover{
-    color: #fff;
-} And .spanEquipo:hover{
-    color: rgb(3, 152, 186);
-}
 #navegacionSection{
     display: flex;
     justify-content: center;
@@ -843,13 +861,28 @@ a:link {
     bottom: 10px;
     right: 20px;
 }
-.icon-home{
-    color: rgb(7, 88, 41);
+
+.icon-home{  
+    color: #199754;
     font-size: 40px;
 }
+.icon-home:hover{
+    color: #32a9d3;
+}
 .bordUD{
-    border-top: 3px solid #a3e9bc;
-    border-bottom: 3px solid #a3e9bc;
+    border-top: 2px solid #32a9d3;
+    border-bottom: 2px solid #32a9d3;
+}
+.qsm{
+    color: white;
+    text-decoration: underline;
+    border: 6px solid #1e9757;
+    padding: 10px;
+}
+.qsm:hover{
+    border: 6px solid #32a9d3;
+    color: white;
+    background: #00000026;
 }
 @media screen and (max-width: 768px){
     .iconoSubir{
