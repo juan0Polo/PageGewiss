@@ -46,7 +46,7 @@
     border: 2px solid rgb(219, 237, 221);
     color: black;
 }
-.txt-mision{
+.txt-enfoque{
     color: rgb(1, 15, 2);
     border-radius: 32px;
     padding: 20px;
@@ -54,9 +54,9 @@
     height: 40%;
     font-family: Arial;
     background: #158047;;
-    border: 2px solid rgb(219, 237, 221);
+    border: 2px solid rgb(237, 224, 219);
 }
-.txt-mision h1{
+.txt-enfoque h1{
     font-size: 30px;
 }
 .img-conatiner{
