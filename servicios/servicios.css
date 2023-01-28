@@ -16,18 +16,17 @@
     /* display: none; */
 }
 .txt-servicio{
-    border: 1px solid rgb(194, 209, 196);
-    border-radius: 20px;
-    width: 400px;
+    border-radius: 0 50px 0 50px;
+    border: 3px solid #32a9d3;
     padding: 20px;
     font-family: Arial;
-    height: 400px;
     background: transparent;
 }
-.txt-servicio:hover{
-    background: rgb(232, 239, 233);
-    border: 1px solid rgb(219, 237, 221);
-}
+/* .txt-servicio:hover{
+    border-radius: 0 50px 0 50px;
+    border: 3px solid #32a9d3;
+    background: #00000045
+} */
 .txt-servicio h1{
     font-size: 35px;
 }
@@ -35,9 +34,7 @@
     font-size: 16px;
 }
 .servicio-img{
-    display: flex;
     background-color: rgba(55, 118, 174, 0.333);
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -69,15 +66,19 @@
 }
 #SectionNavServices{
     display: flex;
+    flex-direction: column;
     margin-top: 15px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
 }
 .contenedorNavs{
-    display: block;
+    display: flex;
     text-align: center;
-    width: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
 }
 .divBtnService{
     margin: 2px 0px 2px 0px;
@@ -97,6 +98,7 @@
 .btNavServices:hover{
     color: white;
 }
+
 
 
 .final{
