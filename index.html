@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" href="css/styleCookies.css">
   <link rel="stylesheet" href="servicios/servicios.css">
+  <link rel="icon" href="recursos/icoTitle.ico" type="imagen/ico">
 </head>
 
 <body class="body">
@@ -23,7 +24,7 @@
   <div class="contenedor-logo"><img src="recursos/imagenes/logo-gewis.png" alt="logo de GEWISS" class="logo"></div>
   <!-- Inicio de Nav-bar-->
 
-  <nav class="navbar navbar-expand-md navbar-dark  bg-nav " id="ventana">
+  <nav class="navbar navbar-expand-md navbar-dark bg-nav " id="ventana">
     <div class="container-fluid">
 
       <button id="nav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -39,10 +40,10 @@
             <a class="nav-link" href="#principal">Quienes Somos</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#SectionNavServices">Servicios</a>
+            <a class="nav-link" href="servicios/servcios.html">Metodologia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="vinculateAnosotros/vinculateAnosotros.html">Trabaja Con Nosotros</a>
+            <a class="nav-link" href="https://forms.gle/4wff2GizBWNguDgT9" target="_blank">Trabaja Con Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contacto/contactanos.html">Contacto</a>
@@ -101,7 +102,6 @@
   <!-- Fin slider -->
 
   <!-- navegacion -->
-
   <!-- Inicio quienes somos -->
   <section id="principal" data-type="parallax_section" data-speed="10">
     <div class="div1">
@@ -121,22 +121,132 @@
     </div>
   </section>
   <!-- Fin quienes somos -->
+  </style>
 
   <!-- Inicio especialidades -->
   <section id="SectionNavServices">
     <h1 class="quien">OFRECEMOS SERVICIOS COMO:</h1>
     <div class="contenedorNavs">
-      <div class="divBtnService" class="animated infinite pulse"><a href="servicios/servcios.html"
-          class="btNavServices ">Revisoría Fiscal</a>
+      <!-- <div class="divBtnService" class="animated infinite pulse"> -->
+      <div class="divBtnService">
+        <button onclick="mostrar1()" class="botonMostrar">Revisoría Fiscal</button>
+        <p id="parrafo1" class="text-light">Este proceso será llevado a cabo con un equipo de profesionales competentes
+          con una amplia experiencia y sólidos conocimientos en el área de Revisoría Fiscal, con el fin de generar mayor
+          eficiencia y eficacia en el desarrollo de las operaciones de la compañía.
+
+          <br><br>Confiamos en que esta propuesta sea una respuesta a las necesidades de NUESTROS CLIENTES.
+          <br><br>GEWISS COLOMBIA SAS, queda a su entera disposición para suministrarle información adicional o resolver
+          sus inquietudes sobre nuestra propuesta de servicios profesionales, con el objeto de llegar a un acuerdo que
+          les permita contar con este servicio, el cual se caracteriza por la excelente relación costo-beneficio.
+          Esta labor es realizada basados en Normas Internacionales de Auditoría y Aseguramiento de Información
+        </p>
       </div>
-      <div class="divBtnService" class="animated infinite pulse"><a href="servicios/servcios.html"
-          class="btNavServices ">Auditoria Externa</a></div>
-      <div class="divBtnService" class="animated infinite pulse"><a href="servicios/servcios.html"
-          class="btNavServices ">Planeación Tributaria</a></div>
-      <div class="divBtnService" class="animated infinite pulse"><a href="servicios/servcios.html"
-          class="btNavServices ">Asesoria Financiera y Tributaria</a></div>
-      <div class="divBtnService" class="animated infinite pulse"><a href="servicios/servcios.html"
-          class="btNavServices ">Asesoria Legal</a>
+      <div class="divBtnService">
+        <button onclick="mostrar2()" class="botonMostrar">Auditoria Externa</button>
+        <p id="parrafo2" class="text-light">Este proceso será llevado a cabo con un equipo de profesionales competentes
+          con una amplia experiencia y sólidos conocimientos en el área de Revisoría Fiscal, con el fin de generar mayor
+          eficiencia y eficacia en el desarrollo de las operaciones de la compañía.
+
+          <br><br>Confiamos en que esta propuesta sea una respuesta a las necesidades de NUESTROS CLIENTES.
+
+          <br><br>GEWISS COLOMBIA SAS, queda a su entera disposición para suministrarle información adicional o resolver
+          sus inquietudes sobre nuestra propuesta de servicios profesionales, con el objeto de llegar a un acuerdo que
+          les permita contar con este servicio, el cual se caracteriza por la excelente relación costo-beneficio.
+          Esta labor es realizada basados en Normas Internacionales de Auditoría y Aseguramiento de Información
+        </p>
+      </div>
+
+      <div class="divBtnService">
+        <button onclick="mostrar3()" class="botonMostrar">Planeación Tributarias</button>
+        <p id="parrafo3" class="text-light">Realización de una planeación tributaria para nuestros clientes, la cual
+          incluya un análisis permanente de la situación tributaria de las compañías, con el objeto de lograr una
+          optimización y eficiencia de la tributación, enmarcada siempre dentro del marco legal vigente.
+
+          <br><br>Se realiza una planeación tributaria permanente, que incluya las siguientes actividades:
+
+          <br><br>a) Análisis de la situación fiscal, con el objeto de determinar si hay situaciones que se pueden
+          optimizar.
+
+          <br><br>b) Desarrollamos una planeación para la vigencia fiscal, la cual se realiza sobre la marcha, con base
+          a un análisis detallado, a través de visitas trimestrales, y con base a ello, le vamos presentando a nuestro
+          cliente propuestas de implementación para el año gravable en curso.
+
+          <br><br>c) Se socializa con el cliente las propuestas de optimización y eficiencia tributaria, estableciendo
+          en detalle los requerimientos para su implementación y los beneficios esperados.
+
+          <br><br>d) Con la aprobación por parte del cliente, se implementan las estrategias.
+        </p>
+      </div>
+      <div class="divBtnService">
+        <button onclick="mostrar4()" class="botonMostrar">Asesoria Financiera y Tributaria</button>
+        <p id="parrafo4" class="text-light">Es muy grato presentar nuestros servicios de Asesoría Financiera y
+          Tributaria para su empresa; en virtud de la cual nos encargamos de la organización de procesos y
+          procedimientos contables, como también de resolver sus problemas en dicha área con la mayor diligencia
+          posible. En desarrollo de esta realizamos lo siguiente:
+
+          <br><br>Se realiza inicialmente una revisión del procedimiento del sistema de información de la entidad con el
+          propósito de desarrollar la labor de Asesoría Financiera, en el marco de lo cual se impartirán directrices
+          para las siguientes actividades:
+
+          <br><br>• Organización y registro de los documentos contables
+          <br>• Organización del archivo contable, financiero y tributario
+          <br>• Evaluación del cumplimiento de normas y requisitos de contratación establecidos por la compañía a sus
+          proveedores.
+          <br>• Implementación de nómina electrónica.
+          <br>• Implementación de documento soporte electrónico.
+          <br>• Implementación de RADIAN.
+
+          <br><br>Se impartirán directrices para realización de arqueos de caja general, las conciliaciones bancarias,
+          conciliaciones de cartera y proveedores.
+
+          <br><br>Como parte integral esencial de esta propuesta, se incluye de manera permanente una asesoría de
+          carácter tributario enfocada principalmente a la elaboración y revisión de las siguientes declaraciones
+          tributarias e informes:
+
+          <br><br>• Declaración de renta y complementarios (elaboración y presentación)
+          <br>• Declaración mensual de retención en la fuente (elaboración y presentación)
+          <br>• Declaración Anual de ICA (elaboración y presentación)
+          <br>• Declaraciones bimestrales de Rete-ICA (elaboración y presentación)
+          <br>• Declaración cuatrimestral de IVA (elaboración y presentación)
+          <br>• Medios Magnéticos Nacionales (elaboración y presentación)
+          <br>• Medios Magnéticos Distritales (elaboración y presentación)
+
+          <br><br>En cuanto a las obligaciones tributarias se hace entrega de un calendario tributario personalizado,
+          donde se reflejen los vencimientos de las declaraciones del año y las fechas en que estarán elaborados los
+          borradores y las declaraciones definitivas respectivas; con el fin que la administración prevea los recursos y
+          planee el tiempo de presentación. En todo caso la liquidación definitiva de las declaraciones mensuales,
+          bimestrales y cuatrimestrales se hará con una antelación no inferior a tres días previos al vencimiento para
+          declarar; y las declaraciones anuales (Renta) se presentarán a consideración de la gerencia con una antelación
+          de un mes.
+
+          <br><br>En pro de que las transacciones registradas en los libros de contabilidad cumplan con su deber y dejen
+          de ser datos para convertirse en verdadera información, que sirva de herramienta a la gerencia para la toma de
+          decisiones, ya sea de forma preventiva o correctiva, nos encargaremos de la elaboración mensual del Estado de
+          Resultados Integral y el Estado de Situación Financiera; y anualmente de la elaboración y presentación de los
+          cuatro estados financieros básicos. Estados financieros presentados de acuerdo a las NIIF.
+
+          <br><br>• Estado de Situación Financiera
+          <br>• Estados de resultados integral
+          <br>• Estado de Cambios en el Patrimonio
+          <br>• Estado de Flujo de Efectivo
+
+          <br><br>Adicionalmente estaremos asesorándolos constantemente en temas como planes de negocio, tributarios,
+          Financieros, Laborales, que ayudaran a que su empresa marche sin mayores contratiempos.
+        </p>
+      </div>
+      <div class="divBtnService">
+        <button onclick="mostrar5()" class="botonMostrar">Asesoria Legal</button>
+        <p id="parrafo5" class="text-light">Con la participación permanente de nuestros profesionales en Derecho,
+          Contadores Públicos e Ingenieros Industriales, les brindamos asesoría legal en los siguientes temas:
+          <br><br>• Creación de empresas
+          <br>• Liquidación de empresas
+          <br>• Transformación societaria
+          <br>• Fusión de empresas
+          <br>• Escisión de empresas
+          <br>• Reformas estatutarias
+          <br>• Asesoría laboral
+          <br>• Evalución de SGI
+        </p>
       </div>
     </div>
   </section>
@@ -166,7 +276,8 @@
   </div>
 
   <div class="iconowhatsap">
-    <a href="https://wa.me/+573208200943?"><img src="recursos/imagenes/icono-whatsap.png" alt="#icono de whatsap" class="ico-whatsapp"></a>
+    <a href="https://wa.me/+573208200943?" target="_blank"><img src="recursos/imagenes/icono-whatsap.png"
+        alt="#icono de whatsap" class="ico-whatsapp"></a>
   </div>
 
   <!-- Inicio fooder -->
@@ -176,13 +287,17 @@
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <img src="recursos/imagenes/logo-gewis.png" alt="" class="logo-fooder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d66669.5050853014!2d-74.07895918376391!3d4.704208064211123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBogot%C3%A1%20Carrera%2014%20No.%20149%20%E2%80%93%2026!5e0!3m2!1ses-419!2sus!4v1674946452598!5m2!1ses-419!2sus"
+              width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-success fw-bold mb-4">Enlaces de interes</h6>
             <p><a href="#principal" class="text-reset">Conocenos</a></p>
-                        <p><a href="servicios/servcios.html" class="text-reset">Servicios</a></p>
-                        <p><a href="vinculateAnosotros/vinculateAnosotros.html" class="text-reset">Tranaja Con Nosotros</a></p>
-                        <p><a href="contacto/contactanos.html" class="text-reset">Contactanos</a></p>
+            <p><a href="servicios/servcios.html" class="text-reset">Metodologia</a></p>
+            <p><a href="https://forms.gle/4wff2GizBWNguDgT9" class="text-reset">Trabaja Con Nosotros</a></p>
+            <p><a href="contacto/contactanos.html" class="text-reset">Contactanos</a></p>
           </div>
           <!-- Grid column -->
 
@@ -192,8 +307,8 @@
             <h6 class="text-success fw-bold mb-4">Contacto</h6>
             <p><i class="fas fa-home me-4"></i>Carrera 14 No. 149 – 26 (Torre 4 - Oficina 403)</p>
             <p><i class="fas fa-envelope me-3"></i>directorgestion@gewiss.com.co</p>
+            <p><i class="fas fa-phone me-3"></i>Tel: (601)702 05 02 </p>
             <p><i class="fas fa-phone me-3"></i>300 632 1483 – 320 820 0943</p>
-            <!-- <p><i class="fas fa-phone me-3"></i> <a href="#" class="text-success">Ver en el mapa</a></p> -->
           </div>
         </div>
       </div>
@@ -201,6 +316,9 @@
     <div class="text-center p-4 text-light" style="background-color: #199754;">© 2023 Copyright: <a
         class="text-light fw-bold" href="contacto/contactanos.html">directorgestion@gewiss.com.co</a>
     </div>
+
+
+
   </footer>
   <!-- Fin footer -->
   <!-- cookies -->
@@ -214,7 +332,6 @@
   <div class="fondo-aviso-cookies " id="fondo-aviso-cookies"></div>
 
   <!-- Scrps -->
-  <script src="js/index.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/avisoCookies.js"></script>

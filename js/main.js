@@ -85,26 +85,40 @@ document.getElementById('nav').addEventListener("click", function () {
 
 'use strict';
 
-;( function ( document, window, index )
-{
-	var inputs = document.querySelectorAll( '.inputfile' );
-	Array.prototype.forEach.call( inputs, function( input )
-	{
-		var label	 = input.nextElementSibling,
-			labelVal = label.innerHTML;
+; (function (document, window, index) {
+    var inputs = document.querySelectorAll('.inputfile');
+    Array.prototype.forEach.call(inputs, function (input) {
+        var label = input.nextElementSibling,
+            labelVal = label.innerHTML;
 
-		input.addEventListener( 'change', function( e )
-		{
-			var fileName = '';
-			if( this.files && this.files.length > 1 )
-				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-			else
-				fileName = e.target.value.split( '\\' ).pop();
+        input.addEventListener('change', function (e) {
+            var fileName = '';
+            if (this.files && this.files.length > 1)
+                fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+            else
+                fileName = e.target.value.split('\\').pop();
 
-			if( fileName )
-				label.querySelector( 'span' ).innerHTML = fileName;
-			else
-				label.innerHTML = labelVal;
-		});
-	});
-}( document, window, 0 ));
+            if (fileName)
+                label.querySelector('span').innerHTML = fileName;
+            else
+                label.innerHTML = labelVal;
+        });
+    });
+}(document, window, 0));
+
+
+function mostrar1() {
+    document.getElementById('parrafo1').style.display = 'block';
+}
+function mostrar2() {
+    document.getElementById('parrafo2').style.display = 'block';
+}
+function mostrar3() {
+    document.getElementById('parrafo3').style.display = 'block';
+}
+function mostrar4() {
+    document.getElementById('parrafo4').style.display = 'block';
+}
+function mostrar5() {
+    document.getElementById('parrafo5').style.display = 'block';
+}
